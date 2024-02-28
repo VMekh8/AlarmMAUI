@@ -1,4 +1,6 @@
-﻿using Android.App;
+﻿using AlarmMAUI.Platforms.Android;
+using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 
