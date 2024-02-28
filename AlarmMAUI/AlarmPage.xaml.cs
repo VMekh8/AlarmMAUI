@@ -1,9 +1,12 @@
-namespace AlarmMAUI;
-
-public partial class AlarmPage : ContentPage
+namespace AlarmMAUI
 {
-	public AlarmPage()
+	public partial class AlarmPage : ContentPage
 	{
-		InitializeComponent();
+        private IAlarmService _alarmService;
+        public AlarmPage(IAlarmService _alarmService)
+		{
+			InitializeComponent();
+			this._alarmService = _alarmService;
+		}
 	}
 }

@@ -5,12 +5,13 @@
         public App()
         {
             InitializeComponent();
+            IAlarmService _alarmService = DependencyService.Get<IAlarmService>();
 
             MainPage = new TabbedPage()
             {
                 Children =
                 {
-                    new AlarmPage(),
+                    new AlarmPage(_alarmService),
                     new TimerPage()
                 }
             };
