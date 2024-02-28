@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlarmMAUI.AlarmPage"
+             Title="AlarmPage">
+    <VerticalStackLayout
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+        <Label 
+           Text="Оберіть дату: "
+           VerticalOptions="Start"
+           HorizontalOptions="Start"
+           FontSize="18"
+           TextColor="#3f3f3f"
+           Margin="5"/>
+        <DatePicker
+            x:Name="DatePicker1"
+            HorizontalOptions="Fill"
+            VerticalOptions="CenterAndExpand"
+            FontSize="22"
+            />
+        <Label 
+            Text="Оберіть дату: "
+            VerticalOptions="Start"
+            HorizontalOptions="Start"
+            FontSize="18"
+            TextColor="#3f3f3f"
+            Margin="5"/>
+        <TimePicker 
+            x:Name="TimePicker1"
+            HorizontalOptions="Fill"
+            VerticalOptions="CenterAndExpand"
+            FontSize="22"
+            />
+        <HorizontalStackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Center">
+            <Button
+                x:Name="SetAlarmBtn"
+                Padding="3"
+                Margin="10"
+                CornerRadius="8"
+                Text="Set Alarm"
+                FontSize="16"
+                BackgroundColor="Transparent"
+                BorderColor="#3f3f3f"
+                BorderWidth="2"
+                TextColor="#3f3f3f"/>
+            <Button
+                x:Name="CancelAlarmBtn"
+                Padding="3"
+                Margin="10"
+                CornerRadius="8"
+                Text="Cancel Alarm"
+                FontSize="16"
+                BackgroundColor="Red"
+                BorderWidth="1"
+                BorderColor="White"
+                TextColor="White"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

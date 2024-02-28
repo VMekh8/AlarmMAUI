@@ -6,7 +6,14 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new TabbedPage()
+            {
+                Children =
+                {
+                    new AlarmPage(),
+                    new TimerPage()
+                }
+            };
         }
     }
 }
